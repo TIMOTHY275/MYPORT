@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #000000, #000000);
+      color: #f0f0f0;
+      line-height: 1.6;
+      background-attachment: fixed;
+    }
+
+    header, section, footer {
+      max-width: 1000px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    header {
+      text-align: center;
+      background: rgba(255, 255, 1, 0.714);
+      color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #ffcc00;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    ul li {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    ul li:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .project {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+    }
+
+    .profile-image {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .profile-image img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #ffcc00;
+      box-shadow: 0 0 60px rgba(255, 204, 0, 0.4);
+      background: radial-gradient(circle, rgba(255,204,0,0.3) 0%, transparent 70%);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+    }
+
+    input, textarea, button {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    input, textarea {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    button {
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #e6b800;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 254, 254, 0.4), 0.4), 0.4);
+      font-size: 0.9rem;
+      color: #ddd;
+      border-radius: 20px;
+      backdrop-filter: blur(6px);
+    }
+    .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-links a img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s, filter 0.3s;
+  filter: brightness(0) invert(1);
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.2) drop-shadow(0 0 5px #ffcc00);
+}
+
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <header class="fade-in">
+    <h1>Hello, I'm Timothy</h1>
+    <p>Front-End Developer | Creative Coder | Aspiring Full-Stack Web Developer</p>
+  </header>
+
+  <section class="fade-in" id="about">
+    <h2>About Me</h2>
+    <div class="profile-image">
+      <img src="6dba7086-ec8c-4da6-9922-60bdfc3ce0e0.png" alt="Timmy's Photo">
+    </div>
+    <p>I'm a junior web developer with a strong foundation in HTML, CSS, JavaScript,UX & UI designs and more. I started coding during high school days and quickly became passionate about building responsive, user-friendly websites. I hold a national senior certificate (NQF L4) and a certificate of completion of the FNB App academy 2025. I've completed several freelance projects, including a website for a company in the agricultural industry namely "JUST-CHECK-INN" ,a website for a local internet cafe` as well as a passion project inspired by real life current gender based violence cases. I'm especially interested in front-end development and love bringing designs to life in the browser. I'm currently looking for opportunities where I can continue learning and produce meaningful high quality work.</p>
+  </section>
+<div id = "back">
+  <section class="fade-in" id="skills" >
+
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>GSAP</li>
+      <li>Python</li>
+      <li>API Integration</li>
+      <li>GitHub & Collaboration</li>
+      <li>Adobe XD</li>
+      <li>Integration of UX & UI Principles</li>
+    </ul>
+  </section>
+</div>
+  <section class="fade-in" id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+     
+     <h3>Project 01</h3>
+      <h5>JUST-CHECK-INN</h5>
+        <P>A web app using semantic HTML for SEO optimization,javascript ,CSS & GSAP for resposive designs while adherirng to the principles of UI and UX.</p>
+      
+    </div>
+
+    <div class="project">
+      <h3>Project 02</h3>
+      <h5>Gender based violence website</h5>
+      <p>A responsive website inspired by the rapidly rising gender based violence cases in south africa.The purpose of the website is to raise or create awareness of gender based violence (GBV)and to help victims get help and also share their stories through forums to shine light on others that have endured the violation.</p>
+    </div>
+    <div class="project">
+      <h3>Project 03</h3>
+      <h5>MOBOYA.NET</h5>
+       <p>I've developed a front end informational page for an internet cafe` based in a rural area , i was able to identify a problem within that business which was not having a website which resulted in the business not being able to reach a larger pool of potential clients therefore i created the website of the business using Semantic HTML ,CSS for responsiveness and proper white spacing to improve the user's navigation through the website which is extremely important because on average users spend 15 seconds trying to find what they're looking for in a website and if they're unable to do so that will result in the website losing traffic.</p>
+    </div>
+  </section>
+ <div id = mama >
+  <section class="fade-in" id="experience">
+   
+    <h2>Work Experience</h2>
+    <p>I have experience in freelance web development which included Developing & maintaining websites, Search Engine optimization,creating responsive web designs,integrating UX principles for functionality across various devices,APIs integration,GSAP integration and  developing websites using HTML5 , CSS & JAVASCRIPT, Intergration of UI principles for ensuring it is visually appealing, intuitive , and user-friendly ,problem solving ,closely collaborating with non-technical stakeholders to translate ideas into code.</p>
+    <br/>
+   <p> To add on i also have a professional work experience of 0-1 years in the retail industry which included day to day cash administration ,auditing of stock ,customer service and satisfaction of customer needs both over the phone and in person which helped me improve my skills of dealing with customers,managing myself and managing time .</p>
+   <br/>    
+   <a href="https://docs.google.com/document/d/1Odi_ZmI3VN-spCypeVGXHJeZSWplors8/edit?usp=drive_link&ouid=118141553802809736194&rtpof=true&sd=true"><button type="DOWNLOAD">DOWNLOAD CV</button></a> 
+  
+</section>
+</div>
+    <section class="fade-in" id="social">
+  <h2>Connect With Me</h2>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/timothy-teane-67b916244" target="_blank" aria-label="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/TIMOTHY275" target="_blank" aria-label="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+    </a>
+  
+  </div>
+</section>
+<DIV ID="KONTANT">
+  <section class="fade-in" id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/timothyteane86@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</DIV>
+
+
+
+  <script>
+    gsap.utils.toArray('.fade-in').forEach(el => {
+      gsap.from(el, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        scrollTrigger: {
+          trigger: el,
+          start: "top 80%",
+        }
+      });
+    });
+  </script>
+  <footer >
+    <p> © 2024. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
+
